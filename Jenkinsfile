@@ -1,7 +1,7 @@
 pipeline {
 	agent any
 	stages {
-		stage {
+		stage ("Welcome to Jenkins") {
 			steps {
 				script {
 					println "Hi All, Welcome to Jenkins Automation"
