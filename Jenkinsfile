@@ -4,14 +4,9 @@ pipeline {
 		stage ("Welcome to Jenkins") {
 			steps {
 				script {
-					a=10
-					b=20
-					if (a>b) {
-						println "${a} is Big"
-					}
-					else
+					for (i=1;i<5;i++)
 					{
-						println "${b} is Big"
+						println "Value is ${i}"
 					}
 				}
 			}
