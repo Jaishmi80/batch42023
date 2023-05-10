@@ -4,7 +4,7 @@ pipeline {
 		stage ("Welcome to Jenkins") {
 			steps {
 				script {
-          var1 = 20
+					input message: 'Please enter a value', parameters: [string(defaultValue: '10', name: 'var1')]
 					println "my var1 value is ${var1}"
 				}
 			}
