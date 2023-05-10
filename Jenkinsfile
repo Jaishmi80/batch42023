@@ -4,7 +4,7 @@ pipeline {
 		stage ("Welcome to Jenkins") {
 			steps {
 				script {
-					println "my var1 value si 200"
+					println "my  value si 200"
 				}
 			}
 		}
