@@ -1,11 +1,14 @@
 pipeline {
 	agent any
+	parameters {
+	  choice choices: ['dev', 'sit', 'pr', 'prod'], description: 'Select environment', name: 'ENV'
+	}
+	
 	stages {
 		stage ("Welcome to Jenkins") {
 			steps {
 				script {
-					println "BUILD_NUMBER is ${BUILD_NUMBER}"
-					println "my var1 value is 1234"
+						println "Selected env is ${params.ENV}"
 				}
 			}
 		}
