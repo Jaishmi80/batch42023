@@ -11,7 +11,7 @@ pipeline {
 					println "I am calling a function call myfn"
 					myfn()
 					}
-				}
+				
 			}
 		}
 	}
