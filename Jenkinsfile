@@ -9,7 +9,7 @@ pipeline {
 					println "Lines\n ${lines}"
 					for (line in lines)
 					{
-						println ${line}
+						println "${line}"
 					}
 					
 				}
