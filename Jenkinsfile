@@ -4,11 +4,13 @@ pipeline {
 		stage ("Welcome to Jenkins") {
 			steps {
 				script {
-					i=1
-					while(i<=10)
+					File file = new new File("/tmp/test.txt")
+					def lines = file.readLines()
+					println "Lines\n ${lines}"
+					for (line in lines)
 					{
-						println "I value is ${i}"
-						i=i+1
+						println ${line}
+					}
 					}
 				}
 			}
